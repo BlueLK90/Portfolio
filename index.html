@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nehad JM</title>
+  </head>
+  <body class="mainContainer">
+    <header class="home" id="home">
+      <div class="header">
+        <div class="logo">
+          <p class="headerImg">N</p>
+          <p>Nehad.JM</p>
+        </div>
+        <div class="navBar-div">
+          <nav class="navBarBackground"></nav>
+          <nav class="navBar">
+            <a href="#home" title="home"><i class="fa-solid fa-house"></i></a>
+            <a href="#skills"><i class="fa-solid fa-pen-ruler"></i></a>
+            <a href="#projects"><i class="fa-solid fa-sitemap"></i></a>
+            <a href="#footer"><i class="fa-solid fa-envelope"></i></a>
+          </nav>
+        </div>
+      </div>
+      <div class="homeSec">
+        <img class="homeImage" src="/assets/welcomePageImg.PNG" />
+        <div>
+          <p class="paragraph">
+            <em class="span welcome">Welcome</em> to my portfolio
+            <br />
+            My name is <em class="span myName">Nehad</em>,
+            <br />
+            & I'm a professional Front-end Developer.
+          </p>
+        </div>
+      </div>
+    </header>
+    <section id="skills">
+      <div class="skillsText">
+        <h2>Skills :</h2>
+        <h3>
+          The main area of expertise is front end development (client side of
+          the web). HTML, CSS, JS, building user interfaces and web applications
+          with React, animations, and coding interactive layouts with focus on
+          responsive design, accessibility, and performance.
+        </h3>
+      </div>
+      <div class="skillsIcons">
+        <img class="skillsImg" src="/assets/html-5.png" alt="" />
+        <img class="skillsImg" src="/assets/css-3.png" alt="" />
+        <img class="skillsImg" src="/assets/js.png" alt="" />
+        <img class="skillsImg" src="/assets/react-icon.png" alt="" />
+        <!-- <img class="skillsImg" src="/assets/plus.png" alt="" height="30" /> -->
+      </div>
+    </section>
+    <section id="projects">
+      <h1>Projects :</h1>
+      <h2>
+        Here you find some things I built. Various projects to fit different
+        Business aspects
+      </h2>
+      <div class="projects">
+        <img
+          src="/assets/collection.png"
+          class="projIcon"
+          alt=""
+          width="20%"
+          onclick="viewCards()"
+        />
+        <h1 class="icon" title="icon">Simple Projects</h1>
+      </div>
+      <div class="projects">
+        <img
+          src="/assets/collection.png"
+          class="projIcon"
+          alt=""
+          width="20%"
+          onclick="viewCards()"
+        />
+        <h1 class="icon" title="icon">React Projects</h1>
+      </div>
+      <section class="card-container" id="card-container">
+        <div class="card card1">
+          <img
+            class="projImg"
+            src="/assets/card image.png"
+            alt=""
+            width="100%"
+          />
+          <h3>Project 1</h3>
+          <p class="projDesc">
+            Lorem ipsum dolor, sit i dignissimos, tempora debitis
+          </p>
+        </div>
+        <div class="card card2">
+          <img
+            class="projImg"
+            src="/assets/card image.png"
+            alt=""
+            width="100%"
+          />
+          <h3>Project 2</h3>
+          <p class="projDesc">
+            Lorem ipsum dolor, sit i dignissimos, tempora debitis
+          </p>
+        </div>
+        <div class="card card3">
+          <img
+            class="projImg"
+            src="/assets/card image.png"
+            alt=""
+            width="100%"
+          />
+          <h3>Project 3</h3>
+          <p class="projDesc">
+            Lorem ipsum dolor, sit i dignissimos, tempora debitis
+          </p>
+        </div>
+        <button onclick="viewCards()" class="skillsButton">
+          <i class="fa-solid fa-xmark fa-xl" style="color: #dc032f"></i>
+        </button>
+      </section>
+    </section>
+    <footer id="footer">
+      <div class="main-bg">
+        <div class="contact-form-section">
+          <h1>Let's work together <em>!</em></h1>
+          <form action="" class="contact-form">
+            <label for="user-email">
+              Email:<br />
+              <input type="text" id="user-email" /> </label
+            ><br />
+            <label for="user-message"
+              >Message:<br />
+              <textarea name="user-message" id="user-message"> </textarea>
+            </label>
+            <button>Send</button>
+          </form>
+        </div>
+        <div class="contact-second">
+          <h3>
+            Need help starting a new project?, <br />
+            or interested in collaborating?, or maybe <br />
+            connect or chat! Feel free to DM or follow.
+          </h3>
+          <div class="contacts-list">
+            <div class="direct-contact">
+              <ul>
+                <h4>Contact</h4>
+                <li><a href="">Email</a></li>
+                <li><a href="">Whatsapp</a></li>
+                <li><a href="">Telegram</a></li>
+                <li><a href="">Discord</a></li>
+                <li><a href="">Github</a></li>
+              </ul>
+            </div>
+            <div class="social-media">
+              <ul>
+                <h4>Follow</h4>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Twitter (X)</a></li>
+                <li><a href="">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function viewCards() {
+        document
+          .getElementById("card-container")
+          .classList.toggle("showCardContainer");
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/633ba42723.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
