@@ -12,12 +12,7 @@
     rgba(122, 50, 226, 1) 100%
   );
 }
-@font-face {
-  font-family: "Nirmala";
-  src: local("Nirmala"), url(/assets/ewert.regular.ttf);
-  font-weight: bolder;
-  font-size: 200px;
-}
+
 @font-face {
   font-family: "Sunny love";
   src: local("Sunny love"), url(/assets/Sunny.Love.ttf);
@@ -60,9 +55,9 @@ html {
   text-shadow: 1px 1px 3px #333;
 }
 .headerImg {
-  margin-right: 6%;
-  font-family: "Nirmala";
-  border: dotted red 3px;
+  height: 21px;
+  height: clamp(15px, 2vw, 21px);
+  padding-right: 4%;
 }
 
 .home {
@@ -191,9 +186,16 @@ html {
 /*projects section*/
 #projects {
   position: relative;
-  display: inline-flex;
+  display: grid;
   justify-content: center;
-  align-items: center;
+  justify-items: center;
+  align-content: center;
+  color: #abb7ce;
+  font-size: calc(60% + 1vw);
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #333;
 }
 .projects {
   width: 30%;
@@ -203,9 +205,16 @@ html {
   color: #efcffc;
   font-size: clamp(0.65rem, 1vw, 3rem);
   text-shadow: 2px 5px 5px #590872;
-  border: solid red;
 }
-
+.projectsText {
+  width: 60%;
+  text-align: center;
+}
+.buttonsDiv {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+}
 .projIcon {
   cursor: pointer;
 }
@@ -262,18 +271,6 @@ html {
     position: relative;
     display: inline-block;
   }
-  /*.card1 {
-    top: 20px;
-    left: 0px;
-  }
-  .card2 {
-
-    left: 230px;
-  }
-  .card3 {
-    top: 250px;
-    left: 0;
-  }*/
   .card1:hover,
   .card2:hover,
   .card3:hover {
@@ -303,8 +300,9 @@ html {
 }
 #footer h1,
 #footer h3 {
-  padding: 2rem;
+  padding: 2rem 0 0 2rem;
   text-indent: 10px;
+  line-height: 1.7;
 }
 #footer h2 {
   align-self: flex-end;
@@ -386,3 +384,10 @@ ul {
     line-height: 1.2;
   }
 }
+/*
+@media screen and (max-width: 900px) {
+  .main-bg {
+    display: flex;
+    flex-direction: column;
+  }
+}*/

@@ -10,7 +10,11 @@
     <header class="home" id="home">
       <div class="header">
         <div class="logo">
-          <p class="headerImg">N</p>
+          <img
+            src="/assets/letters-39523_640.png"
+            class="headerImg"
+            alt="headerImg"
+          />
           <p>Nehad.JM</p>
         </div>
         <div class="navBar-div">
@@ -55,30 +59,35 @@
       </div>
     </section>
     <section id="projects">
-      <h1>Projects :</h1>
-      <h2>
-        Here you find some things I built. Various projects to fit different
-        Business aspects
-      </h2>
-      <div class="projects">
-        <img
-          src="/assets/collection.png"
-          class="projIcon"
-          alt=""
-          width="20%"
-          onclick="viewCards()"
-        />
-        <h1 class="icon" title="icon">Simple Projects</h1>
+      <div class="projectsText">
+        <h1>Projects :</h1>
+        <h2>
+          Here you find some things I built. Various projects to fit different
+          Business aspects
+        </h2>
       </div>
-      <div class="projects">
-        <img
-          src="/assets/collection.png"
-          class="projIcon"
-          alt=""
-          width="20%"
-          onclick="viewCards()"
-        />
-        <h1 class="icon" title="icon">React Projects</h1>
+      <div class="buttonsDiv">
+        <div class="projects">
+          <img
+            src="/assets/collection.png"
+            class="projIcon"
+            alt=""
+            width="20%"
+            onclick="viewCards()"
+          />
+          <h1 class="icon" title="icon">Simple Projects</h1>
+        </div>
+
+        <div class="projects">
+          <img
+            src="/assets/collection.png"
+            class="projIcon"
+            alt=""
+            width="20%"
+            onclick="viewCards()"
+          />
+          <h1 class="icon" title="icon">React Projects</h1>
+        </div>
       </div>
       <section class="card-container" id="card-container">
         <div class="card card1">
@@ -117,6 +126,7 @@
             Lorem ipsum dolor, sit i dignissimos, tempora debitis
           </p>
         </div>
+
         <button onclick="viewCards()" class="skillsButton">
           <i class="fa-solid fa-xmark fa-xl" style="color: #dc032f"></i>
         </button>
