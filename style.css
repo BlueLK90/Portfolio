@@ -11,7 +11,7 @@
     rgba(122, 50, 226, 1) 90%
   );
   color: #abb7ce;
-  width: 98dvw;
+  width: 100%;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
   scroll-behavior: smooth;
@@ -85,7 +85,7 @@
 }
 
 .fa-solid {
-  color: #cedaf3;
+  color: #dde3f0;
   font-size: clamp(1.15rem, 2dvw, 1.5rem);
   text-shadow: 1px 1px 2px #333;
 }
@@ -298,11 +298,9 @@
 .navBarHide {
   opacity: 0;
 }
-
 .projectsTextHide {
   opacity: 0;
 }
-
 .buttonsDivHide {
   opacity: 0;
 }
@@ -334,7 +332,6 @@
 }
 
 /*contacts section*/
-
 #footer {
   color: rgb(220, 236, 250);
   padding: 0;
@@ -399,7 +396,7 @@ textarea:focus {
 }
 #footer button {
   align-self: flex-end;
-  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   font-weight: 900;
   letter-spacing: 1px;
   color: #2b0235;
@@ -407,6 +404,7 @@ textarea:focus {
   border-radius: 1.5rem;
   padding: 0.3rem 1.5rem;
   margin-right: 5%;
+  text-shadow: 1px 1px 5px #7c468b;
 }
 #footer h1,
 #footer h3 {

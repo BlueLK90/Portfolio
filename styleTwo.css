@@ -11,7 +11,7 @@
     rgba(122, 50, 226, 1) 90%
   );
   color: #abb7ce;
-  width: 98dvw;
+  width: 100%;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
   scroll-behavior: smooth;
@@ -65,27 +65,32 @@
   padding-right: 4%;
 }
 /*navbar*/
-.navBar {
+.fixedheader {
   position: fixed;
+  top: 4vh;
+  height: max-content;
+  width: 90vw;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-inline: auto;
+}
+.navBar {
   display: flex;
   justify-content: center;
   align-content: center;
   place-items: center;
   gap: 3.5%;
-  height: 2rem;
+  height: 2.5rem;
   max-height: 5%;
-  width: 35%;
+  width: 45%;
   max-width: 300px;
-  right: 5%;
-  top: 4.5%;
   border: solid 2px #bbbfc7;
   border-radius: 2rem;
-  z-index: 10;
   padding-block: 0.5%;
 }
 
 .fa-solid {
-  color: #cedaf3;
+  color: #dde3f0;
   font-size: clamp(1.15rem, 2dvw, 1.5rem);
   text-shadow: 1px 1px 2px #333;
 }
@@ -396,7 +401,7 @@ textarea:focus {
 }
 #footer button {
   align-self: flex-end;
-  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   font-weight: 900;
   letter-spacing: 1px;
   color: #2b0235;
@@ -404,6 +409,7 @@ textarea:focus {
   border-radius: 1.5rem;
   padding: 0.3rem 1.5rem;
   margin-right: 5%;
+  text-shadow: 1px 1px 5px #7c468b;
 }
 #footer h1,
 #footer h3 {
@@ -445,9 +451,11 @@ textarea:focus {
     text-shadow: 2px 2px 5px #333;
     text-align: left;
   }
+  .fixedheader {
+    top: 6vh;
+  }
   .navBar {
     gap: 5%;
-    top: 6%;
   }
   .skillsText h3 {
     text-align: left;
