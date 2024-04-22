@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+      function viewCards() {
+        document
+          .getElementById("card-container")
+          .classList.toggle("showCardContainer");
+        document.getElementById("navBar").classList.toggle("navBarHide");
+        document
+          .getElementById("projectsText")
+          .classList.toggle("projectsTextHide");
+        document
+          .getElementById("buttonsDiv")
+          .classList.toggle("buttonsDivHide");
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/633ba42723.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Nehad JM</title>
   </head>
   <body class="mainContainer">
@@ -11,21 +29,18 @@
       <div class="header">
         <div class="logo">
           <img
-            src="/assets/letters-39523_640.png"
+            src="/assets/logo1-removebg.png"
             class="headerImg"
             alt="headerImg"
           />
           <p>Nehad.JM</p>
         </div>
-        <div class="navBar-div">
-          <nav class="navBarBackground"></nav>
-          <nav class="navBar">
-            <a href="#home" title="home"><i class="fa-solid fa-house"></i></a>
-            <a href="#skills"><i class="fa-solid fa-pen-ruler"></i></a>
-            <a href="#projects"><i class="fa-solid fa-sitemap"></i></a>
-            <a href="#footer"><i class="fa-solid fa-envelope"></i></a>
-          </nav>
-        </div>
+        <nav class="navBar" id="navBar">
+          <a href="#home" title="home"><i class="fa-solid fa-house"></i></a>
+          <a href="#skills"><i class="fa-solid fa-pen-ruler"></i></a>
+          <a href="#projects"><i class="fa-solid fa-sitemap"></i></a>
+          <a href="#footer"><i class="fa-solid fa-envelope"></i></a>
+        </nav>
       </div>
       <div class="homeSec">
         <img class="homeImage" src="/assets/welcomePageImg.PNG" />
@@ -35,19 +50,19 @@
             <br />
             My name is <em class="span myName">Nehad</em>,
             <br />
-            & I'm a professional Front-end Developer.
+            & I'm a Front-end Developer.
           </p>
         </div>
       </div>
     </header>
     <section id="skills">
       <div class="skillsText">
-        <h2>Skills :</h2>
+        <h2>Skills:</h2>
         <h3>
-          The main area of expertise is front end development (client side of
-          the web). HTML, CSS, JS, building user interfaces and web applications
-          with React, animations, and coding interactive layouts with focus on
-          responsive design, accessibility, and performance.
+          The main area of expertise is front end development. Using HTML, CSS,
+          Java Script, to build user interfaces and web applications, coding
+          interactive layouts with focus on responsive design, accessibility,
+          and performance.
         </h3>
       </div>
       <div class="skillsIcons">
@@ -59,20 +74,19 @@
       </div>
     </section>
     <section id="projects">
-      <div class="projectsText">
-        <h1>Projects :</h1>
-        <h2>
+      <div class="projectsText" id="projectsText">
+        <h2>Projects:</h2>
+        <h3>
           Here you find some things I built. Various projects to fit different
-          Business aspects
-        </h2>
+          Business aspects.
+        </h3>
       </div>
-      <div class="buttonsDiv">
+      <div class="buttonsDiv" id="buttonsDiv">
         <div class="projects">
           <img
             src="/assets/collection.png"
             class="projIcon"
             alt=""
-            width="20%"
             onclick="viewCards()"
           />
           <h1 class="icon" title="icon">Simple Projects</h1>
@@ -83,12 +97,12 @@
             src="/assets/collection.png"
             class="projIcon"
             alt=""
-            width="20%"
             onclick="viewCards()"
           />
           <h1 class="icon" title="icon">React Projects</h1>
         </div>
       </div>
+
       <section class="card-container" id="card-container">
         <div class="card card1">
           <img
@@ -97,7 +111,7 @@
             alt=""
             width="100%"
           />
-          <h3>Project 1</h3>
+          <h3 class="projTitle">Project 1</h3>
           <p class="projDesc">
             Lorem ipsum dolor, sit i dignissimos, tempora debitis
           </p>
@@ -109,7 +123,7 @@
             alt=""
             width="100%"
           />
-          <h3>Project 2</h3>
+          <h3 class="projTitle">Project 2</h3>
           <p class="projDesc">
             Lorem ipsum dolor, sit i dignissimos, tempora debitis
           </p>
@@ -121,7 +135,7 @@
             alt=""
             width="100%"
           />
-          <h3>Project 3</h3>
+          <h3 class="projTitle">Project 3</h3>
           <p class="projDesc">
             Lorem ipsum dolor, sit i dignissimos, tempora debitis
           </p>
@@ -135,7 +149,6 @@
     <footer id="footer">
       <div class="main-bg">
         <div class="contact-form-section">
-          <h1>Let's work together <em>!</em></h1>
           <form action="" class="contact-form">
             <label for="user-email">
               Email:<br />
@@ -143,50 +156,55 @@
             ><br />
             <label for="user-message"
               >Message:<br />
-              <textarea name="user-message" id="user-message"> </textarea>
-            </label>
+              <textarea name="user-message" id="user-message">
+              </textarea></label
+            ><br />
             <button>Send</button>
           </form>
+          <h1>Let's work together <em>!</em></h1>
         </div>
-        <div class="contact-second">
+        <div class="contact-para-section">
           <h3>
             Need help starting a new project?, <br />
-            or interested in collaborating?, or maybe <br />
-            connect or chat! Feel free to DM or follow.
+            or interested in collaborating?, <br />
+            or maybe connect or offer a suggestion! <br />Feel free to DM or
+            follow.
           </h3>
           <div class="contacts-list">
             <div class="direct-contact">
               <ul>
                 <h4>Contact</h4>
-                <li><a href="">Email</a></li>
-                <li><a href="">Whatsapp</a></li>
-                <li><a href="">Telegram</a></li>
-                <li><a href="">Discord</a></li>
-                <li><a href="">Github</a></li>
+                <li>
+                  <a
+                    href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=nehad.jassim@gmail.com"
+                    >Email</a
+                  >
+                </li>
+                <li><a href="wa.me/7834888164">Whatsapp</a></li>
+                <li><a href="t.me/nehadjm">Telegram</a></li>
+                <li>
+                  <a href="https://discord.com/users/906494249200128060"
+                    >Discord</a
+                  >
+                </li>
+                <li><a href="https://github.com/BlueLK90">Github</a></li>
               </ul>
             </div>
             <div class="social-media">
               <ul>
                 <h4>Follow</h4>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="">Twitter (X)</a></li>
-                <li><a href="">Instagram</a></li>
+                <li>
+                  <a href="https://www.linkedin.com/in/nehad-jm/">Linkedin</a>
+                </li>
+                <li><a href="https://x.com/NehadJM">Twitter</a></li>
+                <li>
+                  <a href="https://www.instagram.com/nehad.jm">Instagram</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <script>
-      function viewCards() {
-        document
-          .getElementById("card-container")
-          .classList.toggle("showCardContainer");
-      }
-    </script>
-    <script
-      src="https://kit.fontawesome.com/633ba42723.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

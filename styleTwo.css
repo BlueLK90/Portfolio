@@ -298,11 +298,9 @@
 .navBarHide {
   opacity: 0;
 }
-
 .projectsTextHide {
   opacity: 0;
 }
-
 .buttonsDivHide {
   opacity: 0;
 }
@@ -334,7 +332,6 @@
 }
 
 /*contacts section*/
-
 #footer {
   color: rgb(220, 236, 250);
   padding: 0;
