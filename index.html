@@ -17,6 +17,18 @@
           .getElementById("buttonsDiv")
           .classList.toggle("buttonsDivHide");
       }
+      function viewCardsReact() {
+        document
+          .getElementById("card-container-react")
+          .classList.toggle("showCardContainerReact");
+        document.getElementById("navBar").classList.toggle("navBarHide");
+        document
+          .getElementById("projectsText")
+          .classList.toggle("projectsTextHide");
+        document
+          .getElementById("buttonsDiv")
+          .classList.toggle("buttonsDivHide");
+      }
     </script>
     <script
       src="https://kit.fontawesome.com/633ba42723.js"
@@ -104,7 +116,7 @@
             src="/assets/collection.png"
             class="projIcon"
             alt=""
-            onclick="viewCards()"
+            onclick="viewCardsReact()"
           />
           <h1 class="icon" title="icon">React Projects</h1>
         </div>
@@ -114,41 +126,71 @@
         <div class="card card1">
           <img
             class="projImg"
-            src="/assets/card image.png"
-            alt=""
+            src="/assets/Airlines-Booking-Form.png"
+            alt="Airlines-Booking-Form"
             width="100%"
           />
-          <h3 class="projTitle">Project 1</h3>
-          <p class="projDesc">
-            Lorem ipsum dolor, sit i dignissimos, tempora debitis
-          </p>
+          <h3 class="projTitle">Airlines Booking Form</h3>
+          <p class="projDesc"><ion-icon name="logo-github"></ion-icon></p>
         </div>
         <div class="card card2">
           <img
             class="projImg"
-            src="/assets/card image.png"
-            alt=""
+            src="/assets/jewelery-store.png"
+            alt="jewelery-store"
             width="100%"
           />
-          <h3 class="projTitle">Project 2</h3>
-          <p class="projDesc">
-            Lorem ipsum dolor, sit i dignissimos, tempora debitis
-          </p>
+          <h3 class="projTitle">Jewelery Store</h3>
+          <p class="projDesc"><ion-icon name="logo-github"></ion-icon></p>
         </div>
         <div class="card card3">
           <img
             class="projImg"
-            src="/assets/card image.png"
-            alt=""
+            src="/assets/quizz.PNG"
+            alt="quiz"
             width="100%"
           />
-          <h3 class="projTitle">Project 3</h3>
-          <p class="projDesc">
-            Lorem ipsum dolor, sit i dignissimos, tempora debitis
-          </p>
+          <h3 class="projTitle">Quiz App</h3>
+          <p class="projDesc"><ion-icon name="logo-github"></ion-icon></p>
         </div>
 
         <button onclick="viewCards()" class="skillsButton">
+          <i class="fa-solid fa-xmark fa-xl" style="color: #dc032f"></i>
+        </button>
+      </section>
+      <section class="card-container" id="card-container-react">
+        <div class="card card1">
+          <img
+            class="projImg"
+            src="/assets/calculator.png"
+            alt="Calculator"
+            width="100%"
+          />
+          <h3 class="projTitle">Calculator</h3>
+          <p class="projDesc"><ion-icon name="logo-github"></ion-icon></p>
+        </div>
+        <div class="card card2">
+          <img
+            class="projImg"
+            src="/assets/fried-chicken.png"
+            alt="fried-chicken"
+            width="100%"
+          />
+          <h3 class="projTitle">Fried Chicken Restaurant</h3>
+          <p class="projDesc"><ion-icon name="logo-github"></ion-icon></p>
+        </div>
+        <div class="card card3">
+          <img
+            class="projImg"
+            src="/assets/todolist.PNG"
+            alt="todolist"
+            width="100%"
+          />
+          <h3 class="projTitle">Todo App</h3>
+          <p class="projDesc"><ion-icon name="logo-github"></ion-icon></p>
+        </div>
+
+        <button onclick="viewCardsReact()" class="skillsButton">
           <i class="fa-solid fa-xmark fa-xl" style="color: #dc032f"></i>
         </button>
       </section>
