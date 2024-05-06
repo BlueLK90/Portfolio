@@ -356,7 +356,7 @@
   padding-bottom: 2%;
   text-shadow: 1px 1px 2px #0f0f11;
   background-image: url("./assets/25552\(1\).jpg");
-  background-size: contain;
+  background-size: cover;
 }
 .contact-form-section {
   display: grid;
