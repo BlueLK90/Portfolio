@@ -256,7 +256,7 @@
 .card-container,
 .card-container-react {
   position: absolute;
-  opacity: 0;
+  display: none;
   transition: opacity 0s ease;
   padding: 30px;
   margin-top: 20px;
@@ -315,7 +315,6 @@
 }
 .showCardContainer,
 .showCardContainerReact {
-  opacity: 1;
   transition: opacity 0.7s ease;
   min-height: 70dvh;
   display: flex;
